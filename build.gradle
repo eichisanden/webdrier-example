@@ -1,0 +1,18 @@
+group 'webdriver-example'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.seleniumhq.selenium:selenium-server:3.7.1'
+    compile 'org.seleniumhq.selenium:selenium-java:3.7.1'
+    compile 'com.codeborne:selenide:4.8'
+    compile 'io.github.bonigarcia:webdrivermanager:2.0.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
